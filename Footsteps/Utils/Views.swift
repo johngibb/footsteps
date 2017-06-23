@@ -177,3 +177,10 @@ extension UIView {
         return nil
     }
 }
+
+extension UIStackView {
+    convenience init(arrangedSubviews: [UIView], axis: UILayoutConstraintAxis) {
+        self.init(arrangedSubviews: arrangedSubviews)
+        self.axis = axis
+    }
+}
