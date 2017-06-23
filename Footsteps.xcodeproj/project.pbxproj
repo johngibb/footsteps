@@ -13,6 +13,9 @@
 		6A0EB0E61EFDB7110034C573 /* ComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0EB0E51EFDB7110034C573 /* ComponentView.swift */; };
 		6A0EB0E81EFDB8170034C573 /* DestinationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0EB0E71EFDB8170034C573 /* DestinationTableViewCell.swift */; };
 		6A0EB0EA1EFDC7970034C573 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0EB0E91EFDC7970034C573 /* Sequence.swift */; };
+		6A0EB0EC1EFDCA060034C573 /* NavigatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0EB0EB1EFDCA060034C573 /* NavigatorViewController.swift */; };
+		6A0EB0EE1EFDCA8A0034C573 /* NavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0EB0ED1EFDCA8A0034C573 /* NavigatorView.swift */; };
+		6A0EB0F01EFDCAC20034C573 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0EB0EF1EFDCAC20034C573 /* ArrowView.swift */; };
 		6A7EABD41EF8ADE800EEE72F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EABD31EF8ADE800EEE72F /* AppDelegate.swift */; };
 		6A7EABD61EF8ADE800EEE72F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EABD51EF8ADE800EEE72F /* HomeViewController.swift */; };
 		6A7EABD91EF8ADE800EEE72F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7EABD71EF8ADE800EEE72F /* Main.storyboard */; };
@@ -42,6 +45,9 @@
 		6A0EB0E51EFDB7110034C573 /* ComponentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentView.swift; sourceTree = "<group>"; };
 		6A0EB0E71EFDB8170034C573 /* DestinationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationTableViewCell.swift; sourceTree = "<group>"; };
 		6A0EB0E91EFDC7970034C573 /* Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		6A0EB0EB1EFDCA060034C573 /* NavigatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorViewController.swift; sourceTree = "<group>"; };
+		6A0EB0ED1EFDCA8A0034C573 /* NavigatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorView.swift; sourceTree = "<group>"; };
+		6A0EB0EF1EFDCAC20034C573 /* ArrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
 		6A7EABD01EF8ADE800EEE72F /* Footsteps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Footsteps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7EABD31EF8ADE800EEE72F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A7EABD51EF8ADE800EEE72F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				6A7EABD51EF8ADE800EEE72F /* HomeViewController.swift */,
+				6A0EB0EB1EFDCA060034C573 /* NavigatorViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -163,6 +170,8 @@
 				6A7EABF91EF8AECC00EEE72F /* HomeView.swift */,
 				6A7EAC051EF8B4DA00EEE72F /* SearchTextView.swift */,
 				6A0EB0E71EFDB8170034C573 /* DestinationTableViewCell.swift */,
+				6A0EB0ED1EFDCA8A0034C573 /* NavigatorView.swift */,
+				6A0EB0EF1EFDCAC20034C573 /* ArrowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,13 +290,16 @@
 				6A7EABD61EF8ADE800EEE72F /* HomeViewController.swift in Sources */,
 				6A7EABFA1EF8AECC00EEE72F /* HomeView.swift in Sources */,
 				6A7EABD41EF8ADE800EEE72F /* AppDelegate.swift in Sources */,
+				6A0EB0EC1EFDCA060034C573 /* NavigatorViewController.swift in Sources */,
 				6A0EB0DC1EF8BCF10034C573 /* Destination.swift in Sources */,
+				6A0EB0EE1EFDCA8A0034C573 /* NavigatorView.swift in Sources */,
 				6A7EAC061EF8B4DA00EEE72F /* SearchTextView.swift in Sources */,
 				6A7EABF81EF8AE0800EEE72F /* Views.swift in Sources */,
 				6A0EB0EA1EFDC7970034C573 /* Sequence.swift in Sources */,
 				6A0EB0E81EFDB8170034C573 /* DestinationTableViewCell.swift in Sources */,
 				6A0EB0E41EFDB64F0034C573 /* Style.swift in Sources */,
 				6A0EB0E21EF8BFC20034C573 /* SearchAPI.swift in Sources */,
+				6A0EB0F01EFDCAC20034C573 /* ArrowView.swift in Sources */,
 				6A0EB0E61EFDB7110034C573 /* ComponentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -52,8 +52,8 @@ class HomeViewController: UIViewController, Component {
     }
 
     func didSelectResult(destination: Destination) {
-        print("didSelectResult \(destination)")
+        let controller = NavigatorViewController()
+        controller.props = NavigatorViewController.Props(destination: destination)
+        present(controller, animated: true, completion: nil)
     }
-
-
 }

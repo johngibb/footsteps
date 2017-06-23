@@ -10,5 +10,6 @@ import Foundation
 import UIKit
 
 struct Style {
-    static let backgroundColor = UIColor(white: 0.74, alpha: 1)
+    static let foregroundColor = UIColor(white: 0.56, alpha: 1)
+    static let backgroundColor = UIColor(white: 0.29, alpha: 1)
 }
