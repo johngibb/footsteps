@@ -10,17 +10,20 @@ import Foundation
 import MapKit
 
 class SearchAPI {
+    private var latestText = ""
 
     func search(text: String, results: @escaping (([Destination]) -> Void)) {
         let request = MKLocalSearchRequest()
         request.naturalLanguageQuery = text
-
         let localSearch = MKLocalSearch(request: request)
+        latestText = text
         localSearch.start { (localSearchResponse, error) -> Void in
+            guard self.latestText == text else { return } // Discard stale result
             let found = localSearchResponse?.mapItems.map { item in
                 return Destination(
                     name: item.name ?? "",
-                    address: SearchAPI.address(placemark: item.placemark)
+                    address: SearchAPI.address(placemark: item.placemark),
+                    location: item.placemark.location!
                 )
             }
             results(found ?? [])

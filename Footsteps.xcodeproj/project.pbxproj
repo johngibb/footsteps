@@ -16,6 +16,7 @@
 		6A0EB0EC1EFDCA060034C573 /* NavigatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0EB0EB1EFDCA060034C573 /* NavigatorViewController.swift */; };
 		6A0EB0EE1EFDCA8A0034C573 /* NavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0EB0ED1EFDCA8A0034C573 /* NavigatorView.swift */; };
 		6A0EB0F01EFDCAC20034C573 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0EB0EF1EFDCAC20034C573 /* ArrowView.swift */; };
+		6A0EB0F41EFDCF610034C573 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0EB0F31EFDCF610034C573 /* CoreLocation.framework */; };
 		6A0EB0F61F02A17C0034C573 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0EB0F51F02A17C0034C573 /* Event.swift */; };
 		6A7EABD41EF8ADE800EEE72F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EABD31EF8ADE800EEE72F /* AppDelegate.swift */; };
 		6A7EABD61EF8ADE800EEE72F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EABD51EF8ADE800EEE72F /* HomeViewController.swift */; };
@@ -49,6 +50,7 @@
 		6A0EB0EB1EFDCA060034C573 /* NavigatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorViewController.swift; sourceTree = "<group>"; };
 		6A0EB0ED1EFDCA8A0034C573 /* NavigatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorView.swift; sourceTree = "<group>"; };
 		6A0EB0EF1EFDCAC20034C573 /* ArrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
+		6A0EB0F31EFDCF610034C573 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6A0EB0F51F02A17C0034C573 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		6A7EABD01EF8ADE800EEE72F /* Footsteps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Footsteps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7EABD31EF8ADE800EEE72F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A0EB0F41EFDCF610034C573 /* CoreLocation.framework in Frameworks */,
 				6A7EAC011EF8B3A800EEE72F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +185,7 @@
 		6A7EABFF1EF8B3A800EEE72F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A0EB0F31EFDCF610034C573 /* CoreLocation.framework */,
 				6A7EAC001EF8B3A800EEE72F /* MapKit.framework */,
 			);
 			name = Frameworks;
