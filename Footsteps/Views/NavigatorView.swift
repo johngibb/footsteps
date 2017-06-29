@@ -15,7 +15,7 @@ class NavigatorView: UIView, StatelessComponent {
     struct Props {
         let destination: Destination
         let distance: String
-//        let rotation: CGFloat
+        let didTapCancel: ((Void) -> Void)?
     }
 
     let arrowView = ArrowView()
@@ -23,16 +23,34 @@ class NavigatorView: UIView, StatelessComponent {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        addSubviews(arrowView, destinationLabel)
+        let topRow = makeTopRow()
+        addSubviews(arrowView, topRow)
         arrowView.pinToCenterOfContainer()
         backgroundColor = Style.backgroundColor
-        destinationLabel.pinToContainer(top: 20, left: 20)
+        topRow.pinToContainer(top: 20, left: 20, right: 20)
         destinationLabel.textColor = Style.foregroundColor
         destinationLabel.numberOfLines = 0
+    }
+
+    func makeTopRow() -> UIView {
+        let closeIcon = UIButton(type: .custom).tap {
+            $0.setImage(UIImage(named: "button-cancel")?.withRenderingMode(.alwaysTemplate), for: .normal)
+            $0.tintColor = Style.foregroundColor
+            $0.addTarget(self, action: #selector(didTapCancel), for: .touchUpInside)
+            $0.setContentCompressionResistancePriority(UILayoutPriorityRequired, for: .horizontal)
+            $0.setContentHuggingPriority(UILayoutPriorityRequired, for: .horizontal)
+        }
+        return UIStackView(arrangedSubviews: [destinationLabel, closeIcon], axis: .horizontal).tap {
+            $0.distribution = .fill
+        }
     }
 
     func update(oldProps: NavigatorView.Props?, props: NavigatorView.Props) {
         arrowView.props = ArrowView.Props(distance: props.distance)
         destinationLabel.text = props.destination.name + "\n" + props.destination.address
+    }
+
+    func didTapCancel() {
+        props?.didTapCancel?()
     }
 }

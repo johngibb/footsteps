@@ -247,6 +247,7 @@
 				TargetAttributes = {
 					6A7EABCF1EF8ADE800EEE72F = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 27AL9QS4WL;
 						ProvisioningStyle = Automatic;
 					};
 					6A7EABE31EF8ADE800EEE72F = {
@@ -455,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 27AL9QS4WL;
 				INFOPLIST_FILE = Footsteps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SDO.Footsteps;
@@ -467,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 27AL9QS4WL;
 				INFOPLIST_FILE = Footsteps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SDO.Footsteps;
