@@ -25,15 +25,18 @@ class HomeView: UIView, StatelessComponent {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        fillWith(UIStackView(arrangedSubviews: [
-            searchTextView,
-            tableView
-        ], axis: .vertical))
+        let stackView = UIStackView(arrangedSubviews: [searchTextView, tableView]).tap {
+            $0.axis = .vertical
+            $0.spacing = Style.searchToResultSpacing
+            $0.backgroundColor = .white
+        }
+
+        fillWith(stackView, insets: Style.screenInsets)
         searchTextView.addConstraint(.height, .equal, 50)
 
         initTableView()
 
-        backgroundColor = .white
+        backgroundColor = Style.backgroundColor
     }
 
     func update(oldProps: Props?, props: Props) {
@@ -50,6 +53,10 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(DestinationTableViewCell.self, forCellReuseIdentifier: "Destination")
+        tableView.backgroundColor = .clear
+        tableView.separatorInset = UIEdgeInsets(top: 2, left: 0, bottom: 2, right: 0)
+        tableView.separatorStyle = .none
+        tableView.estimatedRowHeight = 40
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -74,5 +81,10 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
         guard let props = props else { return }
         let destination = props.results[indexPath.row]
         props.didSelectResult?(destination)
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
     }
 }

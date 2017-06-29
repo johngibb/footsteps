@@ -14,7 +14,7 @@ class SearchTextView: UIView, UITextFieldDelegate {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        fillWith(textField)
+        fillWith(textField, insets: Style.resultInsets)
         textField.delegate = self
         backgroundColor = .white
     }
