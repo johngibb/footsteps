@@ -36,7 +36,7 @@ class SearchAPI {
             placemark.locality,
             placemark.administrativeArea,
             placemark.postalCode
-        ].removeNils().joined(separator: ", ")
+        ].removeNils().filter({$0 != ""}).joined(separator: ", ")
     }
 }
 
