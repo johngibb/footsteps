@@ -23,7 +23,8 @@ struct Style {
     // Search Result Style
     static let resultBackgroundColor = UIColor.white
     static let resultBackgroundColorSelected = UIColor.lightGray
-    static let searchToResultSpacing = CGFloat(5)
+    static let searchToResultSpacing = CGFloat(8)
+    static let betweenResultSpacing = CGFloat(5)
     static let resultInsets = UIEdgeInsets(
         top: 8,
         left: 8,

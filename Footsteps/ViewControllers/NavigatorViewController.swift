@@ -92,4 +92,6 @@ class NavigatorViewController: UIViewController, Component {
         
         return radiansToDegrees(radians: radiansBearing)
     }
+
+    override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
 }

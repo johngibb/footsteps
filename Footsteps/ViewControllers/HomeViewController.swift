@@ -56,4 +56,6 @@ class HomeViewController: UIViewController, Component {
         controller.props = NavigatorViewController.Props(destination: destination)
         present(controller, animated: true, completion: nil)
     }
+
+    override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
 }

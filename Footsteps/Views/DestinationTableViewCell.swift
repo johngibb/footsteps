@@ -25,7 +25,7 @@ class DestinationTableViewCell: UITableViewCell, StatelessComponent {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         backgroundColor = .clear
 
-        contentView.fillWith(content, insets: UIEdgeInsets(top: 0, left: 0, bottom: 8, right: 0))
+        contentView.fillWith(content, insets: UIEdgeInsets(top: 0, left: 0, bottom: Style.betweenResultSpacing, right: 0))
 
         content.fillWith(UIStackView(arrangedSubviews: [nameLabel, addressLabel]).tap {
             $0.axis = .vertical
