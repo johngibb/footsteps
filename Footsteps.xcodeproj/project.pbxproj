@@ -19,6 +19,7 @@
 		6A0EB0F21EFDCEF50034C573 /* LocationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0EB0F11EFDCEF50034C573 /* LocationStore.swift */; };
 		6A0EB0F41EFDCF610034C573 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0EB0F31EFDCF610034C573 /* CoreLocation.framework */; };
 		6A0EB0F61F02A17C0034C573 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0EB0F51F02A17C0034C573 /* Event.swift */; };
+		6A0EB0F81F0495190034C573 /* Tap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0EB0F71F0495190034C573 /* Tap.swift */; };
 		6A7EABD41EF8ADE800EEE72F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EABD31EF8ADE800EEE72F /* AppDelegate.swift */; };
 		6A7EABD61EF8ADE800EEE72F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EABD51EF8ADE800EEE72F /* HomeViewController.swift */; };
 		6A7EABD91EF8ADE800EEE72F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7EABD71EF8ADE800EEE72F /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		6A0EB0F11EFDCEF50034C573 /* LocationStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationStore.swift; sourceTree = "<group>"; };
 		6A0EB0F31EFDCF610034C573 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6A0EB0F51F02A17C0034C573 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		6A0EB0F71F0495190034C573 /* Tap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tap.swift; sourceTree = "<group>"; };
 		6A7EABD01EF8ADE800EEE72F /* Footsteps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Footsteps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7EABD31EF8ADE800EEE72F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A7EABD51EF8ADE800EEE72F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				6A0EB0E51EFDB7110034C573 /* ComponentView.swift */,
 				6A0EB0E91EFDC7970034C573 /* Sequence.swift */,
 				6A0EB0F51F02A17C0034C573 /* Event.swift */,
+				6A0EB0F71F0495190034C573 /* Tap.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				6A7EABD41EF8ADE800EEE72F /* AppDelegate.swift in Sources */,
 				6A0EB0EC1EFDCA060034C573 /* NavigatorViewController.swift in Sources */,
 				6A0EB0DC1EF8BCF10034C573 /* Destination.swift in Sources */,
+				6A0EB0F81F0495190034C573 /* Tap.swift in Sources */,
 				6A0EB0F21EFDCEF50034C573 /* LocationStore.swift in Sources */,
 				6A0EB0EE1EFDCA8A0034C573 /* NavigatorView.swift in Sources */,
 				6A7EAC061EF8B4DA00EEE72F /* SearchTextView.swift in Sources */,
